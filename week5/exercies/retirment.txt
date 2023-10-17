@@ -1,0 +1,20 @@
+Section 1: Inputs
+
+Input 1: Current Age (integer)
+Input 2: Retirement Age (integer)
+Section 2: Outputs
+Output 1: Years Left Until Retirement (integer)
+Output 2: Retirement Year (integer)
+Section 3: Processes
+Prompt for and input the current age.
+Prompt for and input the retirement age.
+Check if both inputs are valid (numeric).
+Check if the retirement age is realistic (in the future and after the current age).
+Calculate the years left until retirement (retirement age - current age).
+Get the current year from the computer.
+Calculate the retirement year (current year + years left until retirement).
+Display the results: Years Left Until Retirement and Retirement Year.
+Constraints and Edge Cases
+Both the current age and retirement age must be valid positive integers.
+The retirement age must be in the future and greater than the current age.
+The program should handle input errors gracefully and provide meaningful feedback to the user.
