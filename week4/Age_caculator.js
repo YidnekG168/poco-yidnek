@@ -3,7 +3,7 @@ const futureYear = 2030;
 
 const age1 = futureYear - birthYear;
 const age2 = age1 - 1;
-
+// we have to check spaces, string not a no., is it NaN futureyear
 const message = `I will be either ${age1} or ${age2} in ${futureYear}`;
 
 console.log(message); */
@@ -267,3 +267,34 @@ switch(day){
     default:
         console.log("Sonntag");
 }  */
+
+//Functions
+//used for reusability
+//for readebility
+
+let birthYear;
+birthYear = getUserInput("Please enter ur year of birth:");
+
+let targetYear;
+targetYear = getUserInput("Please enter ur target year:");
+
+if(targetYear >=birthYear){
+    let age = targetYear - birthYear;
+    alert(`I will be either ${age-1} or ${age} in ${targetYear}` )
+}
+else{
+    alert("I was not born");
+}
+function getUserInput(promptMsg){
+    let userInput = +prompt(promptMsg); 
+    while(isUserInputValid(userInput)){
+        alert("the iput is not correct");
+        userInput= +prompt(promptMsg);
+    }
+}
+function isUserInputValid(userInput){
+    if(userInput<1 || isNaN(userInput)){
+        return false;
+    }
+    return true;
+}

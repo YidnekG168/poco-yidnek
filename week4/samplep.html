@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .details {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<div id="profiles">
+  <!-- Dynamically generated content will appear here -->
+</div>
+
+<script>
+  // Sample data for each person in the class
+  const people = [
+    { name: "John Doe", age: 25, eyeColor: "blue", hobby: "Playing guitar", imageUrl: "john_doe.jpg" },
+    // Add more profiles here
+  ];
+
+  const profilesContainer = document.getElementById("profiles");
+
+  // Function to generate profile elements
+  function generateProfiles() {
+    people.forEach(person => {
+      const profile = document.createElement("div");
+      profile.className = "profile";
+
+      const image = document.createElement("img");
+      image.src = person.imageUrl;
+      image.alt = person.name;
+      profile.appendChild(image);
+
+      const details = document.createElement("div");
+      details.className = "details";
+      details.innerHTML = `<p>Name: ${person.name}</p><p>Age: ${person.age}</p><p>Eye Color: ${person.eyeColor}</p><p>Hobby: ${person.hobby}</p>`;
+      profile.appendChild(details);
+
+      // Interaction 1: Change image on mouse over
+      profile.addEventListener("mouseover", () => {
+        image.src = "hover_image.jpg"; // Replace with the hover image path
+      });
+
+      // Interaction 2: Display more information on click
+      profile.addEventListener("click", () => {
+        details.style.display = details.style.display === "none" ? "block" : "none";
+      });
+
+      profilesContainer.appendChild(profile);
+    });
+  }
+
+  // Call the function to generate profiles
+  generateProfiles();
+</script>
+
+</body>
+</html>
+

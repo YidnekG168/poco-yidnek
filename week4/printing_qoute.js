@@ -23,3 +23,21 @@ let message = `${userAuthor} says, "${userQuote}"`;
 if( userQuote !== "") {
     console.log(message)
 }
+function display() {
+  let author = prompt("Please enter the author's name:");
+
+  let quote = prompt("Please enter the quote:");
+
+  if (author !== null && quote !== null) {
+    console.log(author + ' says, "' + quote + '"');
+  } else {
+    console.log("Both author and quote are required for the display.");
+  }
+}
+
+display();
+
+
+
+
+

@@ -1,0 +1,41 @@
+/* html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+ }
+ body {
+    margin: 0;
+} */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+.profile img {
+    width: 100px;
+    height: 100px;
+}
+  
+.profile img {
+    width: 100%;
+    background-color: white;
+    box-shadow: 20px 20px 10px grey;
+    opacity: 0.5;
+      }
+.profile img:hover {
+    opacity: 1;
+}
+.profile img {
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+    display: block; 
+	max-width: 100%; 
+}   
+.details {
+    display: none;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
