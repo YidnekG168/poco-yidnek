@@ -6,7 +6,7 @@ const retirementAge = parseInt(
 
 const yearsLeft = retirementAge - currentAge;
 
-const currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear();// creating instance object using new
 const retirementYear = currentYear + yearsLeft;
 
 if (yearsLeft > 0) {
@@ -17,3 +17,5 @@ if (yearsLeft > 0) {
 } else {
   console.log("You have already passed your retirement age.");
 }
+//git branch -m main master > to change it to master
+//git push origin -d main   > to delete the main as a defualt first you have to change it from your setting.
