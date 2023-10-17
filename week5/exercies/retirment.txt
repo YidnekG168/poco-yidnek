@@ -17,4 +17,4 @@ Display the results: Years Left Until Retirement and Retirement Year.
 Constraints and Edge Cases
 Both the current age and retirement age must be valid positive integers.
 The retirement age must be in the future and greater than the current age.
-The program should handle input errors gracefully and provide meaningful feedback to the user.
+The program should handle input errors feedback to the user.
