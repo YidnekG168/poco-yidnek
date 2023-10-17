@@ -75,7 +75,6 @@ function addValues(numbers){
 const num1 = 5;
 const num2 = 10;
 
-// Compare which number is greater
 if (num1 > num2) {
   console.log(`The greater number of ${num1} and ${num2} is ${num1}.`);
   console.log(`The smaller number of ${num1} and ${num2} is ${num2}.`);
@@ -99,7 +98,6 @@ function helloWorld(languageCode) {
     }
   }
   
-  // Call the function for each supported language and log the result
   console.log(helloWorld("en")); // English - "Hello, World"
   console.log(helloWorld("es")); // Spanish - "¡Hola, Mundo!"
   console.log(helloWorld("de")); // German - "Hallo, Welt!"
