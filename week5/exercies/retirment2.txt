@@ -9,7 +9,7 @@ Function Retirement():
     If currentAge and retirementAge are valid integers:
         If retirementAge is in the future and greater than currentAge:
             Calculate yearsLeft as retirementAge - currentAge
-            Get the current year from the computer
+            Get the current year from the user
             Calculate retirementYear as currentYear + yearsLeft
             Display "You have [yearsLeft] years left until you can retire."
             Display "It's currently the year [currentYear], so you can retire in the year [retirementYear]."
