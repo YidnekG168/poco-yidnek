@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Element Manipulation</title>
+</head>
+<body>
+    <h1 id="myH1">Heading 1: </h1>
+    <p id="myP">This is a paragraph: </p>
+    <a id="myA" href="#">Link: </a>
+
+    <script>
+        // Get references to the HTML elements
+        const h1Element = document.getElementById("myH1");
+        const pElement = document.getElementById("myP");
+        const aElement = document.getElementById("myA");
+
+        // Loop for h1 (2 iterations)
+        for (let i = 1; i <= 2; i++) {
+            h1Element.textContent += i;
+        }
+
+        // Loop for p (4 iterations)
+        for (let i = 1; i <= 4; i++) {
+            pElement.textContent = i + pElement.textContent;
+        }
+
+        // Loop for a (7 iterations)
+        for (let i = 1; i <= 7; i++) {
+            aElement.textContent = i;
+        }
+    </script>
+</body>
+</html>
