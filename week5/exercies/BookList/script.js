@@ -77,7 +77,7 @@ books.forEach(book => {
     const li = document.createElement('li');
     const img = document.createElement('img');
     img.src =book.image;
-    li.textContent =`${book.title} by ${book.author} in ${book.year} `;
+    li.textContent =`${book.title} by ${book.author} in ${book.year}`;
     li.appendChild(img);
     bookList.appendChild(li);
 });  */
@@ -91,7 +91,6 @@ books.forEach(book => {
     img.style.margin="0px";
     img.style.height="auto";
     img.style.padding="0px";
-    img.style.borderColor="red";
     li.textContent = `${book.title} by ${book.author} in ${book.year} - ${book.read ? 'Read' : 'Not Read'}`;
     li.appendChild(img);
 /*     li.removeChild()
